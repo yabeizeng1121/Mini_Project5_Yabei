@@ -3,6 +3,15 @@
 
 ![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
 
+Lab Action Items:
+
+* Try out the GitHub Actions plugin in Codespaces
+* Keep adding versions of Python until you find a version that doesn't work
+* Try using both AWS CodeWhisperer and Copilot to help you and keep notes of what you find
+* Put one of your mini-projects into this repo and find out what versions of Python are supported
+* Create Build badges for each version of Python
+
+
 
 
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
