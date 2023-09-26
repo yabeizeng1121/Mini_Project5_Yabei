@@ -17,6 +17,7 @@ For the ETL-Query lab:
 * Convert the main.py into a command-line tool that lets you run each step independantly
 * Fork this project and do the same thing for a new dataset you choose
 * Make sure your project passes tests and has a built badge
+* Include an architectural diagram showing how the project works
 
 #### Reflection Questions
 
