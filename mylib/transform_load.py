@@ -8,7 +8,9 @@ import csv
 #import os
 
 #load the csv file and insert into a new sqlite3 database
-def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
+def load(
+    dataset="/workspaces/sqlite-lab/data/cars.csv"
+):
     """Transforms and Loads data into the local SQLite3 database"""
     payload = csv.reader(open(dataset, newline=''), delimiter=',')
     conn = sqlite3.connect('CarsDB.db')
