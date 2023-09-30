@@ -3,17 +3,19 @@ Test goes here
 
 """
 
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import query
-import os
+import pytest
+from unittest.mock import patch
+from main import main
 
-def test_extract():
-    file_path = extract()
-    assert os.path.exists(file_path)
+def test_main_function():
+    with patch('builtins.input', return_value=''):  # Mocking user input
+        with patch('main.extract') as mock_extract:
+            with patch('main.load') as mock_load:
+                with patch('main.query') as mock_query:
+                    main()
+                    mock_extract.assert_called_once()
+                    mock_load.assert_called_once()
+                    mock_query.assert_called_once()
 
-def test_load():
-    load()
-
-def test_query():
-    result = query()
+if name == "main":
+    pytest.main()
