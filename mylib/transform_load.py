@@ -16,7 +16,7 @@ def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS CarsDB")
     # Update the columns below based on the structure of cars.csv
-    c.execute("CREATE TABLE CarsDB (Brand TEXT, Price REAL, Body TEXT, Mileage INTEGER, EngineV REAL, Engine Type TEXT, Registration TEXT, Year INTEGER, Model TEXT)")
+    c.execute("CREATE TABLE CarsDB (Brand TEXT, Price REAL, Body TEXT, Mileage INTEGER, EngineV REAL, Engine_Type TEXT, Registration TEXT, Year INTEGER, Model TEXT)")
     c.executemany("INSERT INTO CarsDB (Brand, Price, Body, Mileage, EngineV, Engine_Type, Registration, Year, Model) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", payload)
     conn.commit()
     conn.close()
