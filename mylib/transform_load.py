@@ -33,4 +33,4 @@ def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
     
     conn.commit()
     conn.close()
-    return "GroceryDB.db"
+    return "CarsDB.db"
