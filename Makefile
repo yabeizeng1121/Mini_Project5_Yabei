@@ -19,7 +19,8 @@ extract:
 
 transform_load:
 	python mylib/transform_load.py
-query：
+
+query:
 	python mylib/query.py
 
 
