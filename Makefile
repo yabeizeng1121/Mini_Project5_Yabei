@@ -31,5 +31,11 @@ refactor: format lint
 
 deploy:
 	#deploy goes here
+
+generate_and_push:
+	git add . 
+	git commit -m "Generated and pushing changes"  
+	git push origin main 
+
 		
 all: install lint test format deploy
