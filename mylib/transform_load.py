@@ -11,7 +11,7 @@ import csv
 def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
     """Transforms and Loads data into the local SQLite3 database"""
     payload = csv.reader(open(dataset, newline=''), delimiter=',')
-    conn = sqlite3.connect('GroceryDB.db')
+    conn = sqlite3.connect('CarsDB.db')
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS CarsDB")
     
