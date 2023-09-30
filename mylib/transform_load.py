@@ -20,8 +20,10 @@ def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
     Mileage INTEGER, EngineV REAL, Engine_Type TEXT, Registration TEXT, 
     Year INTEGER, Model TEXT)")
     
-    c.executemany("INSERT INTO CarsDB (Brand, Price, Body, Mileage, EngineV, 
-    Engine_Type, Registration, Year, Model) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", payload)
+    c.executemany(
+        "INSERT INTO CarsDB (Brand, Price, Body, Mileage, EngineV, Engine_Type, Registration, Year, Model) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        payload
+    )
     conn.commit()
     conn.close()
     return "GroceryDB.db"
