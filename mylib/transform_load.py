@@ -5,7 +5,7 @@ Example:
 """
 import sqlite3
 import csv
-import os
+#import os
 
 #load the csv file and insert into a new sqlite3 database
 def load(dataset="/workspaces/sqlite-lab/data/cars.csv"):
