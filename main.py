@@ -10,8 +10,7 @@ def main():
     try:
         # Extract
         print("Extracting data...")
-        source_url = input("Enter the source URL(or press 
-        Enter for default): ") or None
+        source_url = input("Enter the source URL: ") or None
                            
         extract(url=source_url)
         print("Data extraction completed successfully.\n")
@@ -19,8 +18,7 @@ def main():
         # Transform and Load
         print("Transforming and loading data...")
                            
-        dataset_path = input("Enter the dataset path (or press 
-        Enter for default): ") or None
+        dataset_path = input("Enter the dataset path: ") or None
                            
         load(dataset=dataset_path)                 
         print("Data transformation and loading completed successfully.\n")
