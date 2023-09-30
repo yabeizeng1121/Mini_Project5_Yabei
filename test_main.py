@@ -17,5 +17,5 @@ def test_main_function():
                     mock_load.assert_called_once()
                     mock_query.assert_called_once()
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     pytest.main()
