@@ -17,6 +17,10 @@ lint:
 extract:
 	python mylib/extract.py
 
+transform_load:
+	python mylib/transform_load.py
+
+
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
